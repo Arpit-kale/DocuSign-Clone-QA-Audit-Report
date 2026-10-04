@@ -1,0 +1,2 @@
+- Dashboard "Start" primary action button does not trigger envelope creation or file upload modal (unresponsive).
+- Agreements table "Download" button fails to initiate document download (times out waiting for browser download event).

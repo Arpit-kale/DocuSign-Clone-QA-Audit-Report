@@ -1,0 +1,15 @@
+[
+  {
+    "id": "BUG-001",
+    "title": "Send flow: envelope can be sent with zero recipients, no validation shown",
+    "category": "Validation",
+    "severity": "P1",
+    "module": "Prepare → Send",
+    "steps": "1. Open http://13.207.185.159/ and sign in ([USERNAME] / [PASSWORD]).\n2. Dashboard → Start → Upload sample.pdf.\n3. Leave Recipients empty.\n4. Click Next.\n5. Click Send.",
+    "expected": "In DocuSign, Send is blocked and an inline error asks for at least one recipient.",
+    "actual": "Envelope is created and appears in Manage with status \"Sent\" and no recipient.",
+    "evidence": "evidence/BUG-001_send_zero-recipients.mp4",
+    "repro": "5/5",
+    "notes": "Validation likely runs on the Recipients screen only, not on submit."
+  }
+]

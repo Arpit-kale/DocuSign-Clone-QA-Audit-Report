@@ -1,0 +1,65 @@
+# Module Checklist — DocuSign Clone QA
+
+## Modules Identified & Tested Status
+- [x] Header / Nav bar (Home, Agreements, Templates, Reports[disabled], Admin[disabled])
+  - [x] Logo link navigation & accessibility
+  - [x] Active state indicators & color contrast
+  - [x] Reports & Admin disabled states (cursor: not-allowed)
+  - [x] User profile avatar menu toggle (JD)
+- [x] Home / Dashboard screen
+  - [x] Welcome back message & typography
+  - [x] Quick action buttons (Start, Send with AI, Get Signatures, Sign a Document)
+  - [x] Tasks widget & agreement activity list
+  - [x] Overview stats (Waiting for others, Expiring soon, Completed) navigation
+  - [x] Upsell / promo panels (View Plans, View Our Guide) dead anchors
+  - [x] Footer links (Support Home, Community, Trust Center, Terms, Privacy)
+  - [x] Semantic heading hierarchy (H1 check)
+  - [x] Page branding (<title>, meta description)
+- [x] Agreements / Manage screen
+  - [x] Left sidebar tabs (Inbox, Sent, Completed, Action Required, Show More, PowerForms)
+  - [x] Sidebar debug labels ('New navigation' check)
+  - [x] Main list (columns: Name, Status, Last Change)
+  - [x] Seeded data audit (personal candidate resumes, double .pdf.pdf extensions)
+  - [x] Untitled documents handling ('[Untitled]')
+  - [x] Download button functionality
+  - [x] Filters (Date, Status, Sender dropdowns)
+  - [x] Search input & empty search results state
+  - [x] Advanced search panel fields & controls
+  - [x] Sent tab status badge rendering
+  - [x] Completed tab completion metadata
+  - [x] Action Required counter badge parity
+  - [x] Start Now toolbar button action
+- [x] Templates screen
+  - [x] Left sidebar (My Templates, Shared with Me, Favorites)
+  - [x] Empty state display & sample templates
+  - [x] Create Template flow navigation (/templates/create)
+  - [x] Pagination controls (5/10/25/50 per page)
+- [x] Start / Upload flow (triggered from Home)
+  - [x] 'Start' primary button responsiveness (Blocked)
+  - [x] 'Get Signatures' envelope initialization & ID mutation
+  - [x] File upload dropzone & file type hints
+- [x] Recipients screen / Setup
+  - [x] Add recipient form (Name, Email)
+  - [x] RFC 5322 Email format validation
+  - [x] Whitespace-only name validation
+  - [x] Multiple recipients addition & drag reordering
+  - [x] 'I'm the only signer' toggle behavior
+  - [x] 'Set signing order' toggle behavior
+- [x] Field placement / Prepare screen
+  - [x] Subject input placeholder formatting & casing
+  - [x] Message character counter (0/10000) & aria-live support
+  - [x] Reminder frequency interval setting ('Every 0 days')
+  - [x] Pre-send validation ('Next: Add Fields' blocker check)
+- [x] Modal behavior
+  - [x] Sign a Document modal open/render
+  - [x] Escape key dismiss
+  - [x] Backdrop outside click dismiss
+  - [x] Empty file submission blocker
+- [x] Routing & Error Handling
+  - [x] 404 non-existent route handling
+  - [x] Direct URL navigation to /send/prepare without envelope ID
+- [x] Pixel Pass & Design System Token Audit
+  - [x] Button styles, border radius, background colors (#CAC2FF vs DocuSign #005CB9)
+  - [x] Header height (64px vs 60px) & padding
+  - [x] Table header typography (uppercase text-transform)
+  - [x] Tab indicator active styles & WCAG contrast

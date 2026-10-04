@@ -1,0 +1,11 @@
+header
+nav a
+h1
+h2
+button
+.btn-primary
+input
+table th
+table td
+[role=tab]
+[class*=badge]

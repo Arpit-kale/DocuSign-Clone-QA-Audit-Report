@@ -1,0 +1,10 @@
+# name|path  — Phase 1 clone routes
+home|/send/home
+agreements|/send/documents
+agreements_sent|/send/documents?view=sent
+agreements_completed|/send/documents?view=completed
+agreements_action_required|/send/documents?view=action-required
+agreements_inbox|/send/documents?view=inbox
+templates|/send/templates
+templates_shared|/send/templates?view=shared-with-me
+templates_favorites|/send/templates?view=favorites
